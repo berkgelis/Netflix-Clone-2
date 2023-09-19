@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Netflix</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div style="position: relative;">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding ">
+      <div class="container-fluid">
+        <div class="netflix-row  d-flex justify-content-between aling-item-center">
+
+          <!-- Header left -->
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" class="d-sm-flex d-none logo" alt="">
+              <img src="./images/Logo1.png" class="d-sm-none logo1" alt="">
+            </a>
+            <div class="netflix-nav d-lg-flex d-none">
+              <section>
+                <button class="bg-transparent border-0 fs-6">Anasayfa</button>
+                <button class="bg-transparent border-0 fs-6">Diziler</button>
+                <button class="bg-transparent border-0 fs-6">Filmler</button>
+                <button class="bg-transparent border-0 fs-6">Yeni ve Popüler</button>
+                <button class="bg-transparent border-0 fs-6">Listem</button>
+                <button class="bg-transparent border-0 fs-6">Dile Göre Gözat</button>
+              </section>
+            </div>
+            <div class="netflix-dropdown-box d-lg-none dropdown ">
+              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Browse
+              </button>
+              <ul class="dropdown-menu browse dropdown-menu-start" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Anasayfa</a></li>
+                <li><a class="dropdown-item" href="#">Diziler</a></li>
+                <li><a class="dropdown-item" href="#">Filmler</a></li>
+                <li><a class="dropdown-item" href="#">Yeni ve Popüler</a></li>
+                <li><a class="dropdown-item" href="#">Listem</a></li>
+                <li><a class="dropdown-item" href="#">Dile Göre Gözat</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Header Right -->
+          <div class="headerRight d-flex align-items-center">
+            <i class="bi bi-search text-white"></i>
+            <i class="bi bi-bell-fill text-white"></i>
+            <div class="dropdown d-flex netflix-dropdown-box">
+              <button class="ms-md-3 btn btn-secondary p-0 dropdown-toggle bg-transparent border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/me.png">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">Profil Yönetimi</a></li>
+                <li><a class="dropdown-item" href="#">Profil Aktar</a></li>
+                <li><a class="dropdown-item" href="#">Hesap</a></li>
+                <li><a class="dropdown-item" href="#">Yardım Merkezi</a></li>
+                <li><a class="dropdown-item" href="#">Netflix Oturumunu Kapat</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- /header -->
+
+    <!-- video -->
+    <div>
+      <section class="netflix-home-video position-relative ">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <video src="video/onepiece.mp4" autoplay muted loop></video>
+
+        <div class="content">
+          <section class="left">
+            <img src="./images/onepiece.png" alt="">
+
+            <div class="d-flex mt-2">
+              <button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Oynat</button>
+              <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i> Daha Fazla Bilgi</button>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+    </div>
+    <!-- video -->
+
+    <!-- sliders -->
+    <div class="Carousel">
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Netflix'te Popüler</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators1" class="carousel" data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card1/terzi.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card1/onepiece.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card1/kulüp.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card1/gossip.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card1/friends.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card1/gilmore.jpeg" class="card-img-top"alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card1/friends.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card1/gossip.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card1/walkingdead.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card1/onepiece.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card1/kulüp.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card1/terzi.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Çocuk ve Aile Dizileri</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators2" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card2/sirinler.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card2/sungerboob.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/barbie.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/grizzy.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/sonic.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/masavekoca.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card2/avatar.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/teengo.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/cadi.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/kungfu.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/gabby.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card2/cuphead.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Anime</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators3" class="carousel " data-bs-slide="ride"> 
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card3/baki.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card3/hajime.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/hunter.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/iblis.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/kuroko.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/myhappy.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card3/record.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/thesait.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/vinland.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/nana.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/jojo.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card3/theseven.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Amerika Yapımı Drama Dizileri</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators4" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card4/gossip.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card4/manifest.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/breaking.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/gilmore.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/thewitcher.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/blacklist.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card4/lucifer.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/virginriver.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/bettercall.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/elchapo.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/narcos.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card4/power.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Ödüllü Diziler</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators5" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card5/lacase.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card5/squidgame.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/peaky.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/stranger.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/seytanavcısı.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/crown.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card5/bodyguard.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/elite.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/the end of fcking.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/viking.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/sweet.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card5/blackmirror.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Komedi Dizileri</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators6" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card6/kardes.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card6/kaçak gelinler.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/brooklyn.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/destined.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/wednesdayt.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/suits.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card6/cobra.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/disenc.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/stronggirl.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/ersan.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/manvs.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card6/seinfeld.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Kore Dramaları</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators7" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card7/alchemyof.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card7/allofus.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/atimecalled.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/behind.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/destinea.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/king.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card7/mrquen.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/realhas.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/squid.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/blood.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/doom.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card7/legend.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators7"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators7"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white text-center"> <b class="ps-4">Eleştirmenlerden Tam Not Alan Diziler</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators8" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images/card8/alice.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images/card8/blacklist.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/body.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/cobra.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/dar.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/elite.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images/card8/how.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/iblis.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/narcos.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/stranger.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/titans.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images/card8/witcher.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators8"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators8"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white"> <b class="ps-4">Belgeseller</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators9" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images1/card9/forumale.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images1/card9/gezegenimzi.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/hapishane.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/insan.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/latinamerika.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/riseof.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images1/card9/ufo.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/uygarlık.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/yavru.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/yırtıcılar.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/evren.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card9/dönüm.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators9"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators9"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white text-center"> <b class="ps-4">Bilim Kurgu ve Fantastik Diziler</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators10" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images1/card10/blackmirror.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images1/card10/chilling.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/dark.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/outlander.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/ragnarok.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/titans.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images1/card10/shadow.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/znation.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/sahmaran.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/salvation.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/333.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card10/order.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators10"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators10"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid pe-5">
+        <section class="d-flex justify-content-between Category">
+          <p class="text-white text-center"> <b class="ps-4">Büyük Çocuklar İçin Birlikte İzlenebilen Film ve Diziler</b> </p>
+        </section>
+
+        <div id="carouselExampleIndicators11" class="carousel " data-bs-slide="ride">
+          <div class="carousel-inner ps-4 overflow-hidden" style="position: relative;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <div class="card">
+                  <img src="images1/card11/cadılar.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="images1/card11/dogayakarsı.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/h2o.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/lego.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/pokemon.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/sampiyona.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex ">
+                <div class="card">
+                  <img src="./images1/card11/redkit.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/troll.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/thundermans.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/mucize.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/dört.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="./images1/card11/zig.jpeg" class="card-img-top" alt="...">
+                </div>
+              </section>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators11"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ms-0">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators11"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <!-- sliders-end -->
+
+    <!-- footer  -->
+    <div class="footer mt-5 row bg-black pb-5">
+      <div class="footer1 p-0">
+        <p class="m-0 mb-4">Sorularınız mı var? <span class="text-decoration-underline">0850-390-7444</span> numaralı
+          telefonu arayın</p>
+      </div>
+      <div class="col-sm-3 col-6 footerBox px-0 ">
+        <ul class="p-0">
+          <li>SSS</li>
+          <li>Yatırım İlişkileri</li>
+          <li>Kullanım Koşulları</li>
+          <li>Bize Ulaşın</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-6 footerBox px-0">
+        <ul class="p-0">
+          <li>Yardım Merkezi</li>
+          <li>İş İmkanları</li>
+          <li>Gizlilik</li>
+          <li>Hız Testi</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-6 footerBox px-0">
+        <ul class="p-0">
+          <li>Hesap</li>
+          <li>Hediye Kartı Kullan</li>
+          <li>Çerez Tercihleri</li>
+          <li>Yasal Hükümler</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-6 footerBox px-0">
+        <ul class="p-0">
+          <li>Medya Merkezi</li>
+          <li>İzleme Yolları</li>
+          <li>Kurumsal Bilgiler</li>
+          <li>Sadece Netflix'te</li>
+        </ul>
+      </div>
+  
+      <div class="language bottom-language position-relative my-2 p-0">
+        <svg class="position-absolute ms-2 mt-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-0 e1mhci4z1" data-name="Globe" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 14.5C8.23033 14.5 8.84266 14.2743 9.48679 12.986C9.76293 12.4337 9.99973 11.7621 10.1748 11H5.8252C6.00027 11.7621 6.23707 12.4337 6.51321 12.986C7.15734 14.2743 7.76967 14.5 8 14.5ZM5.57762 9.5C5.52716 9.02077 5.5 8.51911 5.5 8C5.5 7.48089 5.52716 6.97923 5.57762 6.5H10.4224C10.4728 6.97923 10.5 7.48089 10.5 8C10.5 8.51911 10.4728 9.02077 10.4224 9.5H5.57762ZM11.7092 11C11.4822 12.1217 11.1317 13.117 10.6914 13.9184C12.0137 13.3161 13.0987 12.2837 13.7678 11H11.7092ZM14.3261 9.5H11.9298C11.9759 9.01412 12 8.51269 12 8C12 7.48731 11.9759 6.98588 11.9298 6.5H14.3261C14.4398 6.98152 14.5 7.48373 14.5 8C14.5 8.51627 14.4398 9.01848 14.3261 9.5ZM4.0702 9.5H1.67393C1.56019 9.01848 1.5 8.51627 1.5 8C1.5 7.48373 1.56019 6.98152 1.67393 6.5H4.0702C4.02411 6.98588 4 7.48731 4 8C4 8.51269 4.02411 9.01412 4.0702 9.5ZM2.23221 11H4.29076C4.51779 12.1217 4.86832 13.117 5.30864 13.9184C3.98635 13.3161 2.90128 12.2837 2.23221 11ZM5.8252 5H10.1748C9.99973 4.23793 9.76293 3.56626 9.48679 3.01397C8.84266 1.72571 8.23033 1.5 8 1.5C7.76967 1.5 7.15734 1.72571 6.51321 3.01397C6.23707 3.56626 6.00027 4.23793 5.8252 5ZM11.7092 5H13.7678C13.0987 3.71627 12.0137 2.68389 10.6914 2.08162C11.1317 2.88302 11.4822 3.8783 11.7092 5ZM5.30864 2.08162C4.86832 2.88302 4.51779 3.8783 4.29076 5H2.23221C2.90128 3.71628 3.98635 2.68389 5.30864 2.08162ZM8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0Z"
+            fill="white"></path>
+        </svg>
+        <select class="pe-3">
+          <option value="#">Türkçe</option>
+          <option value="#">English</option>
+        </select>
+        <i class="bottomLanguageDown bi bi-caret-down-fill text-white position-absolute  me-3 mt-2"></i>
+      </div>
+  
+    </div>
+    <!-- footer-end -->
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+
+</body>
+
+</html>
